@@ -5,8 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>{/* 嚴格檢查(開發模式下，以下生命週期執行兩次)：
+                          constructor、render、shouldComponentUpdate、
+                          getDerivedStateFromProps、
+                          Function component、
+                          setState 的第一個參數、
+                          useState、useMemo 或 useReducer 
+                        https://zh-hant.reactjs.org/docs/strict-mode.html*/}
+    <div>
+      <h1>Hello World</h1>   
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
